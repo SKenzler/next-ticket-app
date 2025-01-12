@@ -14,9 +14,7 @@ const Nav = () => {
         </Link>
       </div>
       <div>
-        <p className="text-base text-accent-color font-bold">
-          useremail.gmail.com
-        </p>
+        <p className="text-sm text-accent-color font-bold">Luke Skywalker</p>
       </div>
     </nav>
   );
