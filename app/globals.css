@@ -34,6 +34,29 @@
   p {
     @apply text-sm text-accent-color;
   }
+
+  form {
+    @apply rounded-xl p-4;
+  }
+
+  label {
+    @apply text-sm font-medium text-accent-color mb-1;
+  }
+
+  input {
+    @apply bg-primary-color border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-accent-color focus:border-accent-color w-full p-2;
+  }
+
+  textarea {
+    @apply bg-primary-color border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-accent-color focus:border-accent-color w-full p-2;
+  }
+
+  select {
+    @apply bg-primary-color border border-gray-300 text-gray-900 text-sm focus:ring-accent-color focus:border-accent-color w-full p-2 mb-4;
+  }
+}
+range {
+  @apply bg-primary-color border border-gray-300 text-gray-900 text-sm focus:ring-accent-color focus:border-accent-color w-full p-2 mb-4;
 }
 
 @layer components {
@@ -42,6 +65,6 @@
   }
 
   .fill-btn {
-    @apply hover:no-underline bg-primary-color text-secondary-color font-bold py-2 px-4 rounded tracking-wider transition-colors duration-300 ease-in-out cursor-pointer;
+    @apply bg-accent-color text-primary-color font-bold py-2 px-4 rounded tracking-wider hover:opacity-80  hover:no-underline transition-colors duration-300 ease-in-out my-8 cursor-pointer;
   }
 }
