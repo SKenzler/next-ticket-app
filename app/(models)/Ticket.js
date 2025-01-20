@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import { act } from "react";
+
 mongoose.connect(process.env.MONGODB_URI);
 mongoose.Promise = global.Promise;
 
@@ -16,6 +16,6 @@ const ticketSchema = new Schema(
   { timestamps: true }
 );
 
-const Ticket = mongoose.model.Ticket || mongoose.model("Ticket", ticketSchema);
+const Ticket = mongoose.models.Ticket || mongoose.model("Ticket", ticketSchema);
 
 export default Ticket;
