@@ -19,10 +19,9 @@ const TicketForm = () => {
       body: JSON.stringify({ formData }),
       "content-type": "application/json",
     });
-
+    console.log(response);
     if (!response.ok) {
       throw new Error("Failed to create ticket");
-      console.log(response);
     }
 
     router.refresh();
