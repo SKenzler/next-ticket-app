@@ -14,7 +14,7 @@ const TicketForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("/api/tickets", {
+    const response = await fetch("/API/Tickets", {
       method: "POST",
       body: JSON.stringify({ formData }),
       "content-type": "application/json",
