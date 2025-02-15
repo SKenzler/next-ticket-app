@@ -3,10 +3,10 @@ const StatusDisplay = ({ status }) => {
     let colour = "bg-primary-color";
     switch (status.toLowerCase()) {
       case "not started":
-        colour = "bg-green-500";
+        colour = "bg-blue-500";
         return colour;
       case "in progress":
-        colour = "bg-blue-500";
+        colour = "bg-green-500";
         return colour;
 
       case "done":
@@ -19,7 +19,9 @@ const StatusDisplay = ({ status }) => {
   };
   return (
     <span
-      className={`"inline-block {$getColour(status)} text-slate-50 text-sm font-normal px-2 py-1 rounded-lg`}
+      className={`inline-block ${getColour(
+        status
+      )} text-slate-50 text-sm font-normal px-2 py-1 rounded-lg`}
     >
       {status}
     </span>
