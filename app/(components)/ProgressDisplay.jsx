@@ -1,9 +1,9 @@
-const ProgressDisplay = () => {
+const ProgressDisplay = ({ progress }) => {
   return (
     <div className="w-full h-2.5 rounded-full bg-secondary-color mt-1">
       <div
         className="h-2.5 rounded-full bg-accent-color"
-        style={{ width: "50%" }}
+        style={{ width: `${progress}%` }}
       ></div>
     </div>
   );
