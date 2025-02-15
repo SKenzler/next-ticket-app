@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import REACT, { useState } from "react";
+import { useState } from "react";
 
 const TicketForm = () => {
   const router = useRouter();
@@ -19,7 +19,7 @@ const TicketForm = () => {
       body: JSON.stringify({ formData }),
       "content-type": "application/json",
     });
-    console.log(response);
+
     if (!response.ok) {
       throw new Error("Failed to create ticket");
     }
